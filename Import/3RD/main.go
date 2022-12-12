@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	helper_gen "github.com/langwan/langgo/helpers/gen"
+	"github.com/langwan/langgo/helpers/gen"
 )
 
 func main() {
