@@ -1,0 +1,10 @@
+<html>
+    <head>
+        <title>{{.Title}}</title>
+    </head>
+    <body>
+        {{template "header"}}
+        {{block "content" .}}hello layout{{end}}
+        {{template "footer"}}
+    </body>
+</html>
