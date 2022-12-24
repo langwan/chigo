@@ -1,8 +1,8 @@
 package main
 
 import (
+	"html/template"
 	"os"
-	"text/template"
 )
 
 type Data struct {
@@ -10,14 +10,12 @@ type Data struct {
 }
 
 func main() {
-
 	data := Data{Name: "chihuo"}
-
-	content, err := template.New("content").Parse("<h1>hello {{.Name}}</h1>")
+	tmpl, err := template.ParseFiles("./index.tmpl")
 	if err != nil {
 		panic(err)
 	}
-	err = content.Execute(os.Stdout, data)
+	err = tmpl.Execute(os.Stdout, data)
 	if err != nil {
 		panic(err)
 	}
