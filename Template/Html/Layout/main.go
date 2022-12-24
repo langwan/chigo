@@ -1,19 +1,39 @@
 package main
 
 import (
+	"github.com/gin-gonic/gin"
 	"html/template"
-	"os"
 )
 
-type Data struct {
-	Name string
+type Home struct {
+	Title string
+	Name  string
 }
 
 func main() {
-	data := Data{Name: "chihuo"}
-	tmpl, err := template.ParseFiles("./index.tmpl")
-	if err != nil {
-		panic(err)
-	}
-	tmpl.Execute(os.Stdout, data)
+	var err error
+	defer func() {
+		if err != nil {
+			panic(err)
+		}
+	}()
+
+	g := gin.New()
+	g.GET("home", func(c *gin.Context) {
+		tpl, err := template.ParseFiles("./tpl/layout.html", "./tpl/header.html", "./tpl/footer.html", "./pages/home.html")
+		if err != nil {
+			c.AbortWithError(500, err)
+			return
+		}
+
+		tpl.Execute(c.Writer, &Home{
+			Title: "home",
+			Name:  "chihuo",
+		})
+
+	})
+	g.GET("about", func(c *gin.Context) {
+
+	})
+	g.Run(":8100")
 }
