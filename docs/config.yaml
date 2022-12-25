@@ -1,0 +1,19 @@
+theme: chidocs
+baseUrl: https://langwan.github.io/chidocs/
+title: ChiGo
+canonifyurls: true
+params:
+  icon: "images/icon.jpg"
+  dateFormat: 2006-01-02
+  home:
+    profile:
+      subtitle: 痴货发明家的Go语言教程 第二版
+    logo: "images/golang.png"
+  nav:
+    bilibili: https://space.bilibili.com/401571418
+    github: https://github.com/langwan
+markup:
+  highlight:
+    noClasses: false
+    tabWidth: 4
+defaultContentLanguage: zh-cn

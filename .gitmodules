@@ -1,0 +1,3 @@
+[submodule "docs/themes/chidocs"]
+	path = docs/themes/chidocs
+	url = git@github.com:langwan/chidocs.git
