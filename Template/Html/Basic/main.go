@@ -13,7 +13,7 @@ func main() {
 
 	data := Data{Name: "chihuo"}
 
-	content, err := template.New("content").Parse("<h1>hello {{.Name}}</h1>")
+	content, err := template.New("content").Parse("<h1>hello {{.Name}}</h1>\n")
 	if err != nil {
 		panic(err)
 	}

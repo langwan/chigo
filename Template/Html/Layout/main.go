@@ -33,6 +33,16 @@ func main() {
 
 	})
 	g.GET("about", func(c *gin.Context) {
+		tpl, err := template.ParseFiles("./tpl/layout.html", "./tpl/header.html", "./tpl/footer.html", "./pages/about.html")
+		if err != nil {
+			c.AbortWithError(500, err)
+			return
+		}
+
+		tpl.Execute(c.Writer, &Home{
+			Title: "about",
+			Name:  "chihuo",
+		})
 
 	})
 	g.Run(":8100")
