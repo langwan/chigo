@@ -4,7 +4,7 @@ date: 2022-12-25T10:53:49+08:00
 lastmod: 2022-12-25T10:54:35+08:00
 ---
 
-## html/tempalte
+## html/template
 
 go 语言实现的数据驱动模板，用于生成可防止代码注入的 HTML 输出。它的功能与 text/template 基础功能相同，html/template 侧重于安全。如果与 http 服务结合可以输出 H5 页面。
 
