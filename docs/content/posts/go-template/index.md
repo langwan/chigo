@@ -136,6 +136,11 @@ home 和 about 页的内容
 
 ```
 
+```output
+x = 10
+y = 20
+```
+
 ### 函数
 
 可以注册自定义函数，hugo 就是这样注册进去的。
@@ -144,10 +149,19 @@ home 和 about 页的内容
 
 ```
 
+```output
+4
+```
+
 ### 防注入
 
 ```go {github="https://github.com/langwan/chigo/blob/main/Template/InjectionSafe/main.go"}
 
+```
+
+```output
+Hello, <script>alert('you have been pwned')</script>
+!Hello, &lt;script&gt;alert(&#39;you have been pwned&#39;)&lt;/script&gt;!
 ```
 
 ### 转义
@@ -155,3 +169,17 @@ home 和 about 页的内容
 ```go {github="https://github.com/langwan/chigo/blob/main/Template/Escape/main.go"}
 
 ```
+
+```output
+&#34;Fran &amp; Freddie&#39;s Diner&#34; &lt;tasty@example.com&gt;
+&#34;Fran &amp; Freddie&#39;s Diner&#34; &lt;tasty@example.com&gt;
+&#34;Fran &amp; Freddie&#39;s Diner&#34;32&lt;tasty@example.com&gt;
+\"Fran \u0026 Freddie\'s Diner\" \u003Ctasty@example.com\u003E
+\"Fran \u0026 Freddie\'s Diner\" \u003Ctasty@example.com\u003E
+\"Fran \u0026 Freddie\'s Diner\"32\u003Ctasty@example.com\u003E
+%22Fran+%26+Freddie%27s+Diner%2232%3Ctasty%40example.com%3E
+```
+
+## 视频
+
+{{<bilibili "BV1H84y1s7dg" >}}
