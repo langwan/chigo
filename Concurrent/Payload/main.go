@@ -1,7 +1,10 @@
 package main
 
-import "time"
+import "github.com/langwan/chiab"
 
-func payload() {
-	time.Sleep(100 * time.Millisecond)
+func main() {
+	chiab.Run(func(id int64) bool {
+		payload()
+		return true
+	}, 100, 100, "payload", false)
 }
