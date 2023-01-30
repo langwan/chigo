@@ -1,0 +1,39 @@
+{
+  "proxy": "http://127.0.0.1:3003",
+  "dependencies": {
+    "@chihuo/srpclient": "^1.0.1",
+    "assert": "^2.0.0",
+    "axios": "^1.2.5",
+    "bignum-browserify": "^0.0.2",
+    "buffer": "^6.0.3",
+    "crypto-js": "^4.1.1",
+    "crypto-random-hex": "^1.0.0",
+    "js-sha256": "^0.9.0",
+    "jsbn": "^1.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  }
+}
