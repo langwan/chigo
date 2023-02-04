@@ -10,10 +10,15 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sts v1.18.0
 	github.com/gin-gonic/gin v1.8.2
 	github.com/imdario/mergo v0.3.13
+	github.com/langwan/chi-go-srp v1.0.1
 	github.com/langwan/chiab v1.0.0
 	github.com/langwan/langgo v0.5.50
 	golang.org/x/sys v0.3.0
 	gopkg.in/yaml.v3 v3.0.1
+	gorm.io/driver/mysql v1.4.0
+	gorm.io/gen v0.3.20
+	gorm.io/gorm v1.24.0
+	gorm.io/plugin/dbresolver v1.3.0
 )
 
 require (
@@ -37,12 +42,11 @@ require (
 	github.com/go-playground/validator/v10 v10.11.1 // indirect
 	github.com/go-sql-driver/mysql v1.6.0 // indirect
 	github.com/goccy/go-json v0.10.0 // indirect
+	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
-	github.com/kong/go-srp v0.0.0-20191210190804-cde1efa3c083 // indirect
-	github.com/langwan/chi-go-srp v1.0.1 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
 	github.com/lithammer/shortuuid/v3 v3.0.7 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
@@ -56,12 +60,10 @@ require (
 	golang.org/x/net v0.4.0 // indirect
 	golang.org/x/text v0.5.0 // indirect
 	golang.org/x/tools v0.1.12 // indirect
+	google.golang.org/genproto v0.0.0-20221024183307-1bc688fe9f3e // indirect
+	google.golang.org/grpc v1.50.1 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gorm.io/datatypes v1.0.7 // indirect
-	gorm.io/driver/mysql v1.4.0 // indirect
-	gorm.io/gen v0.3.20 // indirect
-	gorm.io/gorm v1.24.0 // indirect
 	gorm.io/hints v1.1.0 // indirect
-	gorm.io/plugin/dbresolver v1.3.0 // indirect
 )
