@@ -6,15 +6,21 @@
     "axios": "^1.2.5",
     "bignum-browserify": "^0.0.2",
     "buffer": "^6.0.3",
+    "create-hash": "^1.2.0",
+    "crypto": "npm:crypto-browserify",
+    "crypto-browserify": "^3.12.0",
     "crypto-js": "^4.1.1",
     "crypto-random-hex": "^1.0.0",
     "js-sha256": "^0.9.0",
     "jsbn": "^1.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-app-rewired": "^2.2.1",
+    "react-dom": "^18.2.0",
+    "stream": "npm:stream-browserify",
+    "stream-browserify": "^3.0.0"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-app-rewired start"
   },
   "browserslist": {
     "production": [

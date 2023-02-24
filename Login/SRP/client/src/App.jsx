@@ -1,6 +1,6 @@
-import srp from "@chihuo/srpclient";
 import axios from "axios";
 import { Buffer } from "buffer";
+import srp from "chi-srp-client/client";
 import { useState } from "react";
 export default function App() {
   const username = "chihuo";
